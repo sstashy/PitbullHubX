@@ -1,4 +1,4 @@
-# Pitbull Hub X
+# Pitbull Hub X 🐾
 
 Discord : https://discord.gg/yZTduXkhMn
 
