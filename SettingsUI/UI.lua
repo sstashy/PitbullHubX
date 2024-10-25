@@ -1,6 +1,3 @@
--- [Original by Hyperion : CSGO Cheat]
--- [[https://hyperion.vip/]]
-
 if not game:IsLoaded() then
 	game.Loaded:Wait()
 end
@@ -23,7 +20,6 @@ local function cretate_button(asd)
 	button.ZIndex=5000
 	return button
 end
-
 
 local function ToDefault(val,def)
 	return val or def
@@ -103,7 +99,7 @@ local function scrolling_connect(scrollframe:ScrollingFrame)
 	end)
 end
 
-local function SetImage(name:string,image:ImageLabel)
+local function SetImage(name: string, image: ImageLabel)
 	name = name or "ADS"
 	name = name:lower()
 
@@ -111,146 +107,80 @@ local function SetImage(name:string,image:ImageLabel)
 
 	if name == "ads" then
 		image.Image = NigImage
-		image.ImageRectOffset = Vector2.new(205,565)
-		image.ImageRectSize = Vector2.new(35,35)
+		image.ImageRectOffset = Vector2.new(205, 565)
+		image.ImageRectSize = Vector2.new(35, 35)
 		return
-	end
-
-	if name == "list" then
+	elseif name == "list" then
 		image.Image = NigImage
-		image.ImageRectOffset = Vector2.new(485,205)
-		image.ImageRectSize = Vector2.new(35,35)
+		image.ImageRectOffset = Vector2.new(485, 205)
+		image.ImageRectSize = Vector2.new(35, 35)
 		return
-	end
-
-	if name == "folder" then
+	elseif name == "folder" then
 		image.Image = NigImage
-		image.ImageRectOffset = Vector2.new(805,45)
-		image.ImageRectSize = Vector2.new(35,35)
+		image.ImageRectOffset = Vector2.new(805, 45)
+		image.ImageRectSize = Vector2.new(35, 35)
 		return
-	end
-
-	if name == "earth" then
+	elseif name == "earth" then
 		image.Image = NigImage
-		image.ImageRectOffset = Vector2.new(604,324)
-		image.ImageRectSize = Vector2.new(35,35)
+		image.ImageRectOffset = Vector2.new(604, 324)
+		image.ImageRectSize = Vector2.new(35, 35)
 		return
-	end
-
-	if name == "locked" then
+	elseif name == "locked" then
 		image.Image = NigImage
 		image.ImageRectOffset = Vector2.new(524, 644)
-		image.ImageRectSize = Vector2.new(35,35)
+		image.ImageRectSize = Vector2.new(35, 35)
 		return
-	end
-
-	if name == "home" then
-		image.Image = NigImage
-		image.ImageRectOffset = Vector2.new(964, 205)
-		image.ImageRectSize = Vector2.new(35,35)
+	elseif name == "home" then
+		image.Image = "rbxassetid://100705460071421"
 		return
-	end
-
-	if name == "positon" or name == 'gps' then
+	elseif name == "position" or name == "gps" then
 		image.Image = NigImage
 		image.ImageRectOffset = Vector2.new(325, 565)
-		image.ImageRectSize = Vector2.new(35,35)
+		image.ImageRectSize = Vector2.new(35, 35)
 		return
-	end
-
-	if name == "notify" or name == 'notification' then
+	elseif name == "notify" or name == "notification" then
 		image.Image = NigImage
 		image.ImageRectOffset = Vector2.new(325, 565)
-		image.ImageRectSize = Vector2.new(35,35)
+		image.ImageRectSize = Vector2.new(35, 35)
 		return
-	end
-
-	if name == "close" or name == 'no' then
+	elseif name == "close" or name == "no" then
 		image.Image = NigImage
 		image.ImageRectOffset = Vector2.new(284, 4)
 		image.ImageRectSize = Vector2.new(24, 24)
 		return
-	end
-
-	if name == "color" then
+	elseif name == "color" then
 		image.Image = NigImage
 		image.ImageRectOffset = Vector2.new(44, 964)
 		image.ImageRectSize = Vector2.new(36, 36)
 		return
 	end
 
-	image.ImageRectOffset = Vector2.new(0,0)
-	image.ImageRectSize = Vector2.new(0,0)
+	image.ImageRectOffset = Vector2.new(0, 0)
+	image.ImageRectSize = Vector2.new(0, 0)
 
-	if name == "settings" then
-		image.Image = "rbxassetid://7734053495"
-	end
+	local customImages = {
+		["settings"] = "rbxassetid://7734053495",
+		["smartphone"] = "rbxassetid://7734058979",
+		["crown"] = "rbxassetid://7733765398",
+		["save"] = "rbxassetid://7734052335",
+		["hash"] = "rbxassetid://7733955740",
+		["server"] = "rbxassetid://7734053426",
+		["option"] = "rbxassetid://7734021300",
+		["link"] = "rbxassetid://7733978098",
+		["copy"] = "rbxassetid://7733764083",
+		["cpu"] = "rbxassetid://7733765045",
+		["moon"] = "rbxassetid://7743870134",
+		["wallet"] = "rbxassetid://7743877573",
+		["main"] = "rbxassetid://96066928475510",
+		["combat"] = "rbxassetid://138776387267314",
+		["shop"] = "rbxassetid://80966626231804",
+		["settings"] = "rbxassetid://102452480231124"
+	}
 
-	if name == "smartphone" then
-		image.Image = "rbxassetid://7734058979"
-	end
-
-	if name == "crown" then
-		image.Image = "rbxassetid://7733765398"
-	end
-
-	if name == "save" then
-		image.Image = "rbxassetid://7734052335"
-	end
-
-	if name == "hash" then
-		image.Image = "rbxassetid://7733955740"
-	end
-
-	if name == "server" then
-		image.Image = "rbxassetid://7734053426"
-	end
-
-	if name == "option" then
-		image.Image = "rbxassetid://7734021300"
-	end
-
-	if name == "link" then
-		image.Image = "rbxassetid://7733978098"
-	end
-
-	if name == "copy" then
-		image.Image = "rbxassetid://7733764083"
-	end
-
-	if name == "cpu" then
-		image.Image = "rbxassetid://7733765045"
-	end
-
-	if name == "moon" then
-		image.Image = "rbxassetid://7743870134"
-	end
-
-	if name == "wallet" then
-		image.Image = "rbxassetid://7743877573"
-	end
-
-    if name == "Home" then
-		image.Image = "rbxassetid://100705460071421"
-	end
-
-    if name == "Main" then
-		image.Image = "rbxassetid://96066928475510"
-	end
-
-    if name == "Combat" then
-		image.Image = "rbxassetid://138776387267314"
-	end
-
-    if name == "Shop" then
-		image.Image = "rbxassetid://80966626231804"
-	end
-
-    if name == "Settings" then
-		image.Image = "rbxassetid://102452480231124"
+	if customImages[name] then
+		image.Image = customImages[name]
 	end
 end
-
 
 function NoHyper.new(WindowName,WindowLogo,WindowDescription)
 	local HyperWindow = {
