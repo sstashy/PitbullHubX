@@ -11,7 +11,6 @@ Thank you for your understanding and support. Together, we can make a significan
 
 Sincerely,
 
-
 • This file has been protected using Luraph
 • Script credits to G - MX2
 ]]--
