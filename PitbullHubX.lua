@@ -20,4 +20,4 @@ Supports these games:
 
 // // // // // // // // // // // // // // // // // // // // // ]]--
 
-local a="96998B8E9D9E9C93989152918B978F64729E9E9A718F9E524C929E9E9A9D6459599C8BA15891939E929F8C9F9D8F9C8D99989E8F989E588D9997597D99A36B8E9C93837E597A939E8C9F9696729F8C82599C8F909D59928F8B8E9D59978B9398597A939E8C9F9696729F8C8258969F8B4C564A9E9C9F8F5353525334"local b=42;local function c(a,b)local d=""for e=1,#a,2 do local f=a:sub(e,e+1)local g=tonumber(f,16)local h=(g-b)%256;d=d..string.char(h)end;return d end;local i=c(a,b)loadstring(i)()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyAdriYT/PitbullHubX/refs/heads/main/Games/Blade%20Ball.lua", true))()
