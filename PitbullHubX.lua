@@ -25,7 +25,7 @@ local StarterGui = game:GetService("StarterGui")
 StarterGui:SetCore("SendNotification", {
     Title = "Pitbull Hub X";
     Text = "Our team will resolve this as quickly as possible so you can get back to enjoying your experience.";
-    Duration = 5;
+    Duration = 9999999999999999999999999999;
 })
 
 local XD_Brush = Instance.new("ScreenGui")
