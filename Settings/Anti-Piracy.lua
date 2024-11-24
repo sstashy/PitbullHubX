@@ -1,0 +1,1 @@
+local antipiracy = "NO"
