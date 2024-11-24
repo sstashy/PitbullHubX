@@ -15,8 +15,11 @@
              Ʌ Ʌ Ʌ Ʌ Ʌ Ʌ Ʌ Ʌ Ʌ Ʌ Ʌ Ʌ Ʌ Ʌ Ʌ
 
 Supports all executors
+Credits:
+    • G - MX2: All script
+    • Light/Jayden: Manual Spam
 Supports these games:
-    - Blade Ball
+    • Blade Ball
 
 // // // // // // // // // // // // // // // // // // // // // ]]--
 
