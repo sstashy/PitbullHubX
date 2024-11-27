@@ -23,4 +23,4 @@ Supports these games:
 
 // // // // // // // // // // // // // // // // // // // // // ]]--
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyAdriYT/PitbullHubX/refs/heads/main/Games/Blade%20Ball.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyAdriYT/Bakugan/refs/heads/main/Bakugan.lua", true))()
